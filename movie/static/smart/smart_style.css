@@ -117,8 +117,8 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 250px;
-  height: 300px;
+  width: 17.36vw;
+  height: 40vh;
 }
 
 .main-title-logo {
@@ -136,7 +136,7 @@ body {
 
 .main-title-logo__text {
   font-family: Georgia-Italic;
-  font-size: 48px;
+  font-size: 3.33vw;
   color: #636363;
 }
 
@@ -161,6 +161,6 @@ body {
 
 .sub-title-logo > span {
   font-family: Georgia-BoldItalic;
-  font-size: 16px;
+  font-size: 1.11vw;
   color: #636363;
 }
