@@ -3,24 +3,37 @@ body {
 }
 
 /*
+ * Slide
+ */
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*
  * header
  */
 .slide > header {
   position: relative;
+  box-sizing: border-box;
+  height: 8vh;
   border-bottom: 2px solid #EEEEF1;
 }
 
 .header__title {
+  position: absolute;
+  bottom: 0;
   padding-left: 20px;
   font-family: Georgia-Italic;
-  font-size: 54px;
+  font-size: 3.75vw;
   color: #52AFE7;
 }
 
 .header-nav {
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: 100vw;
 }
 
 .header-nav ul {
@@ -33,16 +46,121 @@ body {
 }
 
 .header-nav ul > li:not(:last-of-type) {
-  margin-right: 40px;
+  margin-right: 2.77vw;
 }
 
 .header-nav__item {
+  position: relative;
   font-family: HelveticaNeue-Medium;
-  font-size: 32px;
+  font-size: 2.22vw;
   color: #717579;
+  transition: 0.3s;
+}
+
+.header-nav__item:hover:not(.header-nav__item--state-active) {
+  color: #339BE1;
+}
+
+.header-nav__item:not(.header-nav__item--state-active)::before,
+.header-nav__item:not(.header-nav__item--state-active)::after {
+  position: absolute;
+  bottom: 0em;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background-color: #339BE1;
+  transition: 0.3s;
+}
+
+.header-nav__item::before {
+  left: 50%;
+}
+
+.header-nav__item::after {
+  right: 50%;
+}
+
+.header-nav__item:hover::before,
+.header-nav__item:hover::after {
+  width: 50%;
 }
 
 .header-nav__item--state-active {
   border-bottom: 3px solid #339BE1;
   color: #52AFE7;
+}
+
+/*
+ * Content
+ */
+
+.content {
+  height: 92vh;
+}
+
+.home {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-bg-img {
+  position: absolute;
+  width: 100%;
+}
+
+.home-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 250px;
+  height: 300px;
+}
+
+.main-title-logo {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 4px solid #676767;
+  border-radius: 16px;
+}
+
+.main-title-logo__text {
+  font-family: Georgia-Italic;
+  font-size: 48px;
+  color: #636363;
+}
+
+.main-title-logo__text--middle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub-title-logo {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(255,252,252,0.80);
+  border-radius: 13px;
+  text-align: center;
+}
+
+.sub-title-logo > span {
+  font-family: Georgia-BoldItalic;
+  font-size: 16px;
+  color: #636363;
 }
