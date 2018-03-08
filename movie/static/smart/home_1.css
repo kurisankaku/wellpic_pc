@@ -1,0 +1,84 @@
+/*
+ * Content
+ */
+.home-1 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-1-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('img/Home1Bg.png');
+  background-size: cover;
+}
+
+.home-1-bg-img:after {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  content: "";
+  background-color: rgba(122,117,84,0.55);
+  filter: blur(100px);
+}
+
+.home-1-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 90%;
+  margin: auto;
+}
+
+.home-1-message .sentence {
+  font-family: Osaka;
+  font-size: 4.16vw;
+  color: #FFFFFF;
+  line-height: 8.33vw;
+  text-align: center;
+  padding-bottom: 1.38vw;
+}
+
+.home-1-message .line-dash {
+  width: 100%;
+  height: 0.69vw;
+  background-image: linear-gradient(to right, #FFF, #FFF 2.6vw, transparent 2.6vw, transparent 4vw);
+  background-size: 4vw 0.69vw;
+  background-position: left;
+  background-repeat: repeat-x;
+}
+
+.home-1-message .icon-church {
+  display: block;
+  padding-top: 2.08vw;
+  padding-bottom: 3.472vw;
+  margin: 0 auto;
+  width: 4.86vw;
+}
+
+.icon-down-circle {
+  position: relative;
+  width: 4.86vw;
+  height: 4.86vw;
+  margin: 0 auto;
+  border-radius: 4.86vw;
+  border: solid 0.416vw #FFF;
+}
+
+.icon-down-circle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  border-right: solid 0.416vw #FFF;
+  border-bottom: solid 0.416vw #FFF;
+  transform: translate(-50%, -75%) rotate(45deg);
+}

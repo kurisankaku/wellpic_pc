@@ -13,4 +13,5 @@ body {
 
 .content {
   height: 92vh;
+  overflow-y: scroll;
 }
