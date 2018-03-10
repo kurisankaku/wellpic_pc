@@ -1,0 +1,61 @@
+/*
+ * Content
+ */
+.home-scene {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-scene-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home-scene-bg-img:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  content: "";
+  background-color: rgba(122,117,84,0.55);
+  filter: blur(20px);
+}
+
+.home-scene-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 90%;
+  margin: auto;
+}
+
+.home-scene-message .sentence {
+  font-family: Osaka;
+  font-size: 4.16vw;
+  color: #FFFFFF;
+  line-height: 8.33vw;
+  text-align: center;
+  padding-bottom: 1.38vw;
+}
+
+.home-scene-message .line-dash {
+  width: 100%;
+  height: 0.69vw;
+  background-image: linear-gradient(to right, #FFF, #FFF 2.6vw, transparent 2.6vw, transparent 4vw);
+  background-size: 4vw 0.69vw;
+  background-position: left;
+  background-repeat: repeat-x;
+}
+
+.home-scene-message .icon-theme {
+  display: block;
+  padding-top: 3.08vw;
+  padding-bottom: 3.472vw;
+  margin: 0 auto;
+  width: 4.86vw;
+}
