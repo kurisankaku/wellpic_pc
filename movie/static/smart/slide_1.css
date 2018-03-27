@@ -67,10 +67,9 @@
 }
 
 .slide-circle__content__header__year-label {
-  margin-top: -10px;
   margin-bottom: 10px;
   font-family: HelveticaNeue-Medium;
-  font-size: 20px;
+  font-size: 16px;
   color: #757575;
   text-align: center;
 }
@@ -88,7 +87,7 @@
 .slide-circle__content__header__name {
   margin-top: 10px;
   font-family: HelveticaNeue-Medium;
-  font-size: 20px;
+  font-size: 16px;
   color: #757575;
   text-align: center;
 }
