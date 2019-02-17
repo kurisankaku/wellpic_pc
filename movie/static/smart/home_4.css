@@ -1,0 +1,14 @@
+/*
+ * Content
+ */
+
+.home-4-bg-img {
+  background: url('img/Home4Bg.png');
+  background-size: cover;
+}
+
+.home-scene-message .icon-man {
+  padding-top: 2.08vw;
+  padding-bottom: 2.472vw;
+  width: 2.1vw;
+}
